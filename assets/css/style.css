@@ -424,3 +424,111 @@ body{
   font-weight: 600;
   padding-top: 15px;
 }
+
+/* CTA Bottom CSS */
+
+.cta-bottom-area {
+  background-color: #ff3636;
+  padding: 40px 0;
+}
+.cta-bottom-area h2 {
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #fff;
+  font-size: 50px;
+  margin-bottom: 0;
+}
+.cta-bottom-area span {
+  color: #fff;
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+/* Blog CSS */
+
+
+.single-blog img {
+  width: 100%;
+}
+.single-blog {
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+.blog-area {
+  background-color: #f4f4f4;
+}
+.blog-meta {
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 1px dashed #ddd;
+  padding: 15px 0;
+}
+.blog-meta a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  text-transform: capitalize;
+  transition: .3s;
+  font-size: 18px;
+}
+.blog-meta a:hover {
+  color: #ff3636;
+}
+.blog-content {
+  padding: 20px;
+}
+.blog-content h4 a {
+  color: #333;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: .3s;
+}
+.blog-content h4 a:hover {
+  color: #ff3636;
+}
+.blog-content > a {
+  color: #333;
+  text-decoration: none;
+  font-style: italic;
+  text-transform: capitalize;
+  transition: .3s;
+  font-weight: 500;
+}
+.blog-content > a:hover {
+  color: #ff3636;
+}
+
+/* Gallery CSS */
+
+.single-gallery img {
+  width: 100%;
+}
+.single-gallery {
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.single-gallery:before, .single-gallery:after{
+  position: absolute;
+  content: "";
+  width: 50%;
+  height: 100%;
+  background-color: #333;
+  opacity: .8;
+  top: 0;
+  transition: .3s;
+}
+.single-gallery:before {  
+  left: -50%;
+}
+.single-gallery:after {
+  right: -50%;
+}
+.single-gallery:hover:before{
+  left: 0;
+}
+.single-gallery:hover:after{
+  right: 0;
+}
